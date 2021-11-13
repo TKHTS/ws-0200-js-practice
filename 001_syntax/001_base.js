@@ -29,6 +29,7 @@ function displayLet() {
  *
  */
 function displayArgument(arg) {
+  console.log(arg);
 }
 
 /**
