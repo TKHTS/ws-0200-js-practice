@@ -6,6 +6,11 @@
  *
  */
 function printMessageByAge(age) {
+  if(age >= 20){
+    console.log("成年です。");
+  }else{
+    console.log("未成年です。");
+  }
 }
 
 /**
