@@ -20,6 +20,8 @@ function displayConst() {
  *
  */
 function displayLet() {
+  let foo = "hoge";
+  console.log(foo);
 }
 
 /**
