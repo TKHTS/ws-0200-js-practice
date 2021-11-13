@@ -22,6 +22,13 @@ function printMessageByAge(age) {
  *
  */
 function greeding(hour) {
+  if(hour >= 4 && hour < 12){
+    console.log("Good Morning");
+  }else if (hour >= 12 && hour < 17) {
+    console.log("Hello");
+  }else{
+    console.log("Good Night");
+  }
 }
 
 /**
