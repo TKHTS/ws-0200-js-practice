@@ -45,6 +45,7 @@ function sumTwoArgs(a, b) {
  *
  */
 function subtractTwoArgs(a, b) {
+  return a - b;
 }
 
 /**
