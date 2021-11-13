@@ -74,6 +74,7 @@ function productTwoArgs(a, b) {
  *
  */
 function remainderTwoArgs(a) {
+  return a % 2;
 }
 
 /**
