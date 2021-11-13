@@ -11,6 +11,8 @@ function helloWorld() {
  *
  */
 function displayConst() {
+  const huga = "hoge";
+  console.log(huga);
 }
 
 /**
