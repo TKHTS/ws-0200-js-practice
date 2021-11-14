@@ -4,6 +4,7 @@
  */
 
 function length(str) {
+  return str.length;
 }
 
 /**
@@ -12,6 +13,12 @@ function length(str) {
  */
 
 function lengthIsEven(str) {
+  let strLength = str.length;
+  if(strLength % 2 === 0){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 /**
