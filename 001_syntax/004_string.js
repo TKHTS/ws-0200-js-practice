@@ -61,6 +61,7 @@ function substring(str, a, b) {
  * */
 
 function isInclude(a, b) {
+  return a.includes(b);
 }
 
 /**
