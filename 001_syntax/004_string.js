@@ -36,6 +36,7 @@ function firstChar(str) {
  */
 
 function lastChar(str) {
+  return str.slice(-1);
 }
 
 /**
