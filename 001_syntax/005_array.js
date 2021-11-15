@@ -4,8 +4,10 @@
  */
 
 function printArray(array) {
+  for(let i = 0; i < array.length; i++){
+    console.log(array[i]);
+  }
 }
-
 /**
  *  5.2 関数内で全ての曜日を配列として宣言して返却するメソッドを実装してください
  *
