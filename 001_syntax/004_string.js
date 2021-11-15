@@ -27,6 +27,7 @@ function lengthIsEven(str) {
  */
 
 function firstChar(str) {
+  return str.slice(0, 1);
 }
 
 /**
