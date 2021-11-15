@@ -46,6 +46,7 @@ function lastChar(str) {
  */
 
 function substring(str, a, b) {
+  return str.substring(a - 1, b);
 }
 
 /**
