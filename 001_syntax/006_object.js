@@ -8,6 +8,12 @@
  */
 
 function getPersonObject() {
+  let person = {
+    'name': 'Bob',
+    'age': 32,
+    'gender': 'male'
+  }
+  return person;
 }
 
 /**
