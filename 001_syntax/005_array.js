@@ -24,6 +24,8 @@ function printArray(array) {
  *
  */
 function getDays() {
+  const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+  return days;
 }
 
 /**
