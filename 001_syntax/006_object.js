@@ -31,6 +31,12 @@ function getPersonObject() {
  */
 
 function mutateObject(person) {
+  person['name'] = 'Mary';
+  person['age'] = 37;
+  person['gender'] = 'female';
+
+  return person;
+
 }
 
 /**
