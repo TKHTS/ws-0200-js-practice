@@ -39,6 +39,7 @@ function getDays() {
  */
 
 function findNum(array, num) {
+  return array.includes(num);
 }
 
 /**
