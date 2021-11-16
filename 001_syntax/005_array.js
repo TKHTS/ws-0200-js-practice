@@ -53,6 +53,12 @@ function findNum(array, num) {
  */
 
 function isDuplicate(array) {
+  arr = array.filter((x,i,s) => s.indexOf(x)!==s.lastIndexOf(x));
+  if(arr.length){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 module.exports = {
