@@ -9,9 +9,9 @@
 
 function getPersonObject() {
   let person = {
-    'name': 'Bob',
-    'age': 32,
-    'gender': 'male'
+    name: 'Bob',
+    age: 32,
+    gender: 'male'
   }
   return person;
 }
@@ -61,12 +61,12 @@ function mutateObject(person) {
  */
 
 function assignNumber(persons) {
-  let array = {};
+  let obj = {};
   for(let i = 0; i < 4; i++){
     let num = 1 + Math.floor(Math.random() * 10);
-    array[persons[i]] = num;
+    obj[persons[i]] = num;
   }
-  return array;
+  return obj;
 }
 
 /**
