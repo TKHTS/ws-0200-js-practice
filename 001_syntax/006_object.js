@@ -61,6 +61,12 @@ function mutateObject(person) {
  */
 
 function assignNumber(persons) {
+  let array = {};
+  for(let i = 0; i < 4; i++){
+    let num = 1 + Math.floor(Math.random() * 10);
+    array[persons[i]] = num;
+  }
+  return array;
 }
 
 /**
@@ -75,6 +81,8 @@ function assignNumber(persons) {
  */
 
 function isDuplicate(array) {
+  let setArray = new Set(array);
+  return setArray.size != array.length;
 }
 
 module.exports = {
