@@ -53,12 +53,10 @@ function subtractTwoArgs(a, b) {
  *
  */
 function quotientTwoArgs(a, b) {
-  let AnswerQuotientTwoArgs = Math.floor(a / b);
   if(b === 0){
     return null;
-  }else{
-    return AnswerQuotientTwoArgs;
   }
+  return AnswerQuotientTwoArgs = Math.floor(a / b);
 }
 
 /**
