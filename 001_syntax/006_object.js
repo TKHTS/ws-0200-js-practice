@@ -81,8 +81,11 @@ function assignNumber(persons) {
  */
 
 function isDuplicate(array) {
-  let setArray = new Set(array);
-  return setArray.size != array.length;
+  const obj = {};
+  for(let i = 0; i < array.length; i++){
+    obj[array[i]] = "";
+  }
+  return array.length != Object.keys(obj).length;
 }
 
 module.exports = {
