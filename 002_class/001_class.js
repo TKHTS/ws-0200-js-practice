@@ -22,6 +22,12 @@
  */
 
 class Person {
+  sayHi(){
+    console.log("Hi!!");
+  }
+  static describe(){
+    console.log("This is a Person class");
+  }
 }
 
 function main () {
