@@ -28,7 +28,12 @@ class Person {
   static describe(){
     console.log("This is a Person class");
   }
-}
+  constructor(name = '', age = 0, bio = '') {
+    this.name = name;
+    this.age = age;
+    this.bio = bio;
+    }
+  }
 
 function main () {
   const person = new Person('ichiro', 54, 'I like to play baseball')
