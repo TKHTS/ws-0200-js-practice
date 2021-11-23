@@ -33,7 +33,10 @@ class Person {
     this.age = age;
     this.bio = bio;
     }
+  get isUnderage(){
+    return this.age < 20;
   }
+}
 
 function main () {
   const person = new Person('ichiro', 54, 'I like to play baseball')
