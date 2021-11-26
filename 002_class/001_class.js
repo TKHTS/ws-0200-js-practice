@@ -22,9 +22,6 @@
  */
 
 class Person {
-  sayHi(){
-    console.log("Hi!!");
-  }
   static describe(){
     console.log("This is a Person class");
   }
@@ -32,9 +29,12 @@ class Person {
     this.name = name;
     this.age = age;
     this.bio = bio;
-    }
+  }
   get isUnderage(){
     return this.age < 20;
+  }
+  sayHi(){
+    console.log("Hi!!");
   }
   toString() {
     return `name: ${this.name}, age: ${this.age}, bio: ${this.bio}`;
