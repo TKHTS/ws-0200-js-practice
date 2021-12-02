@@ -12,6 +12,13 @@
  */
 
 function length(str) {
+  let str = 'banana';
+  for(let i = 0; strChar == "undefined"; i++ ){
+      let strChar = str[i];
+      console.log(i);
+      console.log(strChar);
+  }
+  return i;
 }
 
 /**
