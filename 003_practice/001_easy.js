@@ -12,13 +12,18 @@
  */
 
 function length(str) {
-  let str = 'banana';
-  for(let i = 0; strChar == "undefined"; i++ ){
-      let strChar = str[i];
-      console.log(i);
-      console.log(strChar);
+  let i = 0;
+  if(str === ''){
+      return 0;
+  }else{
+    while(i >= 0){
+      i++;
+      if(str[i] == undefined){
+        return i;
+        break;
+      }
+    }
   }
-  return i;
 }
 
 /**
