@@ -139,6 +139,25 @@ class List {
    */
   filter(target) {
     // TODO:
+    let obj2 = [];
+    let arr = [];
+    let i = 0;
+    for(let k = 0; k < arr.length; k++){
+      arr.push(arr[k]);
+    }
+    while(i >= 0){
+      if(arr[i] != undefined){
+        if(arr[i] == target){
+           obj2.push(i);
+        }
+      }else if(arr[i] == undefined){
+        for(let j = 0; j < obj2.length; j++){
+           arr.splice(obj2[j] - j, 1);
+        }
+        return arr;
+      }
+      i++;
+    }
   }
 }
 
