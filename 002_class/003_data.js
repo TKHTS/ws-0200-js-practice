@@ -70,6 +70,8 @@ class List {
    */
   pop() {
     // TODO:
+    let param = this.data.pop();
+    return param;
   }
 
   /** リストの 先頭の要素を取得する
