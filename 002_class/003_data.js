@@ -48,6 +48,8 @@ class List {
    */
   push(item) {
     // TODO:
+    let param = this.data.push(item);
+    return param;
   }
 
   /** 与えられた引数により、リストの 要素を削除する
