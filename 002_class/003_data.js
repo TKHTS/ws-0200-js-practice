@@ -92,6 +92,18 @@ class List {
    */
   find(target) {
     // TODO:
+    let i = 0;
+    while(i >= 0){
+      if(this.data[i] != undefined){
+        if(this.data[i] == target){
+          return this.data[i];
+        }
+        i++;
+      }else if(this.data[i] == undefined){
+      return undefined;
+      break;
+      }
+    }
   }
 
   /** リストの の中から引数に合致する値のindexを取得する。見つからない場合は-1を返す
