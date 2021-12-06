@@ -115,6 +115,17 @@ class List {
    */
   findIndex(target) {
     // TODO:
+    let i = 0;
+    while(i >= 0){
+      if(this.data[i] != undefined){
+        if(this.data[i] == target){
+          return i;
+        }
+      }else if(this.data[i] == undefined){
+        return -1;
+      }
+      i++;
+    }
   }
 
   /** リストの の中から要素に合致する数を取り除く
