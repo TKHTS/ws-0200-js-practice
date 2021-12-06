@@ -59,6 +59,8 @@ class List {
    */
   remove(targetIndex) {
     // TODO:
+    let param = this.data.splice(targetIndex, 1);
+    return param[0];
   }
 
   /** リストの 末尾の要素を取得する
