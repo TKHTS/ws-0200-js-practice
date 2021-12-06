@@ -37,6 +37,8 @@ class List {
    */
   index(index) {
     // TODO:
+    let param = this.data[index];
+    return param;
   }
 
   /** リストの 要素を追加する
