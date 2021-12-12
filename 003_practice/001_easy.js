@@ -38,6 +38,12 @@ function length(str) {
  *
  */
 function reverse(str) {
+  let arr = [];
+  for(i = str.length - 1; i >= 0; i--){
+    arr.push(str[i]);
+  }
+  let arrToStr = arr.join('');
+  return arrToStr;
 }
 
 /**
