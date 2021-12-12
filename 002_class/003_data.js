@@ -37,8 +37,7 @@ class List {
    */
   index(index) {
     // TODO:
-    let param = this.data[index];
-    return param;
+    return this.data[index];
   }
 
   /** リストの 要素を追加する
@@ -48,8 +47,7 @@ class List {
    */
   push(item) {
     // TODO:
-    let param = this.data.push(item);
-    return param;
+    return this.data.push(item);
   }
 
   /** 与えられた引数により、リストの 要素を削除する
@@ -59,8 +57,7 @@ class List {
    */
   remove(targetIndex) {
     // TODO:
-    let param = this.data.splice(targetIndex, 1);
-    return param[0];
+    return this.data.splice(targetIndex, 1)[0];
   }
 
   /** リストの 末尾の要素を取得する
@@ -70,8 +67,7 @@ class List {
    */
   pop() {
     // TODO:
-    let param = this.data.pop();
-    return param;
+    return this.data.pop();
   }
 
   /** リストの 先頭の要素を取得する
@@ -98,7 +94,7 @@ class List {
         if(this.data[i] == target){
           return this.data[i];
         }
-        i++;
+      i++;
       }else if(this.data[i] == undefined){
       return undefined;
       break;
@@ -113,6 +109,7 @@ class List {
    * @param {Number} target
    * @return {Number}
    */
+
   findIndex(target) {
     // TODO:
     let i = 0;
@@ -138,26 +135,13 @@ class List {
    * @return {Number[]}
    */
   filter(target) {
-    // TODO:
-    let obj2 = [];
-    let arr = [];
-    let i = 0;
-    for(let k = 0; k < arr.length; k++){
-      arr.push(arr[k]);
-    }
-    while(i >= 0){
-      if(arr[i] != undefined){
-        if(arr[i] == target){
-           obj2.push(i);
-        }
-      }else if(arr[i] == undefined){
-        for(let j = 0; j < obj2.length; j++){
-           arr.splice(obj2[j] - j, 1);
-        }
-        return arr;
+    let arr2 = [];
+    for (let i = 0; i < this.data.length; i++) {
+      if (target != this.data[i]) {
+        arr2.push(this.data[i]);
       }
-      i++;
     }
+    return arr2;
   }
 }
 
@@ -188,6 +172,7 @@ class Stack {
    */
   push(item) {
     // TODO:
+    this.data.push(item);
   }
 
   /** スタックから要素を取得する
@@ -197,6 +182,7 @@ class Stack {
    */
   pop() {
     // TODO:
+    return this.data.pop();
   }
 
   /** スタックの末尾の要素を参照する
@@ -206,6 +192,7 @@ class Stack {
    */
   peek() {
     // TODO:
+    return this.data[this.data.length - 1];
   }
 }
 
@@ -237,6 +224,7 @@ class Queue {
    */
   enqueue(item) {
     // TODO:
+    this.data.unshift(item);
   }
 
   /** キューから要素を取得する
@@ -245,6 +233,8 @@ class Queue {
    */
   dequeue() {
     // TODO:
+    return this.data.pop();
+
   }
 
   /** キューの要素を参照する
@@ -253,6 +243,7 @@ class Queue {
    */
   peek() {
     // TODO:
+    return this.data[this.data.length -1];
   }
 }
 
