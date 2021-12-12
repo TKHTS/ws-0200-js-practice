@@ -59,6 +59,14 @@ function reverse(str) {
  */
 
 function findIndex(str, char) {
+  let arr = -1;
+  for(i = 0; i <= str.length; i++){
+    if(str[i] == char){
+      arr = i;
+      break;
+    }
+  }
+  return arr;
 }
 
 /**
