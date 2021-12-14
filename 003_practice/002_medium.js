@@ -33,6 +33,13 @@ function rotate(str, num) {
  *
  */
 function removeVowels(str) {
+  let arr = [];
+    for(i = 0; i < str.length; i++){
+      if(!str[i].match(/[aiueo]/)){
+       arr.push(str[i]);
+      }
+    }
+  return arr.join('');
 }
 
 /**
