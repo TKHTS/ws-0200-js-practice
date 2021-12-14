@@ -179,6 +179,14 @@ function size(array) {
  */
 
 function minMax(array) {
+  if(!array.length){
+    return;
+  }else{
+    let arrMin = Math.min(...array);
+    let arrMax = Math.max(...array);
+    let result = `max: ${arrMax}, min: ${arrMin}`;
+    console.log(result);
+  }
 }
 
 /**
