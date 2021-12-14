@@ -54,6 +54,9 @@ function removeVowels(str) {
  *
  */
 function countStr(s1, s2) {
+  let reg = new RegExp(s2, "g");
+  let str = s1.match(reg);
+  return str.length;
 }
 
 /**
