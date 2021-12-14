@@ -120,6 +120,16 @@ function sum(array) {
  */
 
 function average(array) {
+  if(array.length){
+    let result = 0;
+    for(i = 0; i < array.length; i++){
+      result += array[i];
+    }
+    let resultAverage = Math.floor(result / array.length);
+    return resultAverage;
+  }else{
+    return 0;
+  }
 }
 
 /**
