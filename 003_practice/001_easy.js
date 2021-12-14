@@ -162,6 +162,7 @@ function concat(a, b) {
  */
 
 function size(array) {
+  return array.length;
 }
 
 /**
