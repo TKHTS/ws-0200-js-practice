@@ -98,6 +98,11 @@ function split(a, b) {
  */
 
 function sum(array) {
+  let result = 0;
+  for(i = 0; i < array.length; i++){
+    result += array[i];
+  }
+  return result;
 }
 
 /**
