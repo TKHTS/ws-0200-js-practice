@@ -11,6 +11,10 @@
  */
 
 function sumSequence (n, sum = 0) {
+  if (n <= sum){
+    return 0;
+  }
+  return n + sumSequence(n-1);
 }
 
 /**
