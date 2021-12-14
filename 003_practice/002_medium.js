@@ -72,6 +72,8 @@ function countStr(s1, s2) {
  */
 
 function isPalindrome(str) {
+  let palindrome = str.split('').reverse().join('')
+  return str == palindrome;
 }
 
 /**
