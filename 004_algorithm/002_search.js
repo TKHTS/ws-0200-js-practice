@@ -12,6 +12,7 @@
  */
 
 function linearSearch (array, target) {
+  return array.indexOf(target);
 }
 
 /**
