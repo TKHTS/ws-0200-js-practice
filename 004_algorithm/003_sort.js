@@ -9,7 +9,16 @@
  */
 
 function bubbleSort (array) {
-  return array
+  for(i = 0; i < array.length; i++){
+    for(j = array.length; i < j; j--) {
+      if(array[j] < array[j - 1]) {
+        let tmp = array[j - 1];
+        array[j - 1] = array[j];
+        array[j] = tmp;
+      }
+    }
+  }
+  return array;
 }
 
 /**
