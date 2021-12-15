@@ -89,50 +89,6 @@ function fibonacci (num, index = 0, array = []) {
  *    => 38
  */
 
-  const data3 = {
-    type: 'folder',
-    size: 0,
-    children: [
-      {
-        type: 'folder',
-        size: 0,
-        children: [
-          {
-            type: 'folder',
-            size: 0,
-            children: [
-              {
-                type: 'file',
-                size: 5,
-              },
-              {
-                type: 'file',
-                size: 7,
-              },
-              {
-                type: 'file',
-                size: 9,
-              },
-            ],
-          },
-        ],
-      },
-      {
-        type: 'file',
-        size: 3,
-      },
-      {
-        type: 'file',
-        size: 4,
-      },
-      {
-        type: 'file',
-        size: 10,
-      },
-    ],
-  };
-
-// It passed the test code but, to fix the function is needed
 function fileSize (node, sum = 0) {
   if(!node.children) {
     return node.size + sum;
