@@ -28,7 +28,13 @@ function sumSequence (n, sum = 0) {
  */
 
 function fibonacci (num, index = 0, array = []) {
-}
+  array.push(0, 1);
+  for (let i = 2; i <= num; i++) {
+      array.push(array[i-2] + array[i-1]);
+    }
+    let result = array.shift();
+    return array;
+  }
 
 
 /**
