@@ -94,8 +94,8 @@ function merge (left, right) {
  */
 
 function quickSort (a, start = 0, end = (a.length -1)) {
-  return a
-};
+
+}
 
 module.exports = {
   bubbleSort,
