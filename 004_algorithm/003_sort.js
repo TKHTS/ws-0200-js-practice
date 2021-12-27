@@ -94,7 +94,36 @@ function merge (left, right) {
  */
 
 function quickSort (a, start = 0, end = (a.length -1)) {
+  const pivotIndex = Math.floor((start + end) / 2);
+  const pivot = a[pivotIndex];
+  let s = start;
+  let e = end;
 
+  while (true) {
+    while (a[s] < pivot) {
+      s++;
+    }
+    while (pivot < a[e]) {
+      e--;
+    }
+    if (e <= s) {
+      break;
+    }
+    let tmp = a[s];
+    a[s] = a[e];
+    a[e] = tmp;
+    s++;
+    e--;
+  }
+
+  if (start < s - 1) {
+    quickSort(a, start, s - 1);
+  }
+
+  if (e + 1 < end) {
+    quickSort(a, e + 1, end);
+  }
+  return a;
 }
 
 module.exports = {
