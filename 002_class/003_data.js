@@ -141,7 +141,7 @@ class List {
         arr2.push(this.data[i]);
       }
     }
-    return arr2;
+    return new List(arr2);
   }
 }
 
